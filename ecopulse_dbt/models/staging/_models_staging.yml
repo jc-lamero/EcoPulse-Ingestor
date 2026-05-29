@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_weather
+    columns:
+      - name: city
+        tests:
+          - not_null
+      - name: temperature_celsius
+        tests:
+          - not_null
+      - name: ingestion_date
+        tests:
+          - not_null
+
+  - name: stg_airquality
+    columns:
+      - name: city
+        tests:
+          - not_null
+      - name: aqi
+        tests:
+          - not_null
+      - name: ingestion_date
+        tests:
+          - not_null

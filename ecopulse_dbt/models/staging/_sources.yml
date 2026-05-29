@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: ecopulse_raw
+    database: ecopulse-project-497716
+    schema: ecopulse_raw
+    tables:
+      - name: weather
+        description: "Données météo brutes chargées depuis GCS"
+      - name: airquality
+        description: "Données qualité de l'air brutes chargées depuis GCS"
